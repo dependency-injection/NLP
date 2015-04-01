@@ -1,0 +1,4 @@
+rstr <-
+c("aaron", "alot", "am", "and", "at", "doing", "fun", "having", 
+"hello", "i", "is", "my", "name", "of", "r", "study", "symbiosis"
+)

@@ -1,0 +1,116 @@
+lex<-function(textname)
+{
+if(textname=="text1")
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else if(textname=="text2")
+{
+ python.exec("tl=len(text2)")
+ python.exec("pl=len(set(text2))")
+ totl<-python.get("tl")
+ propl<-python.get("pl")
+ lx<-totl / propl
+ label1<-glabel(paste("The average time a word is used in the text is : ",lx),container=mainwindow)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else if(textname=="text3")
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else if(textname=="text4")
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else if(textname=="text5")
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else if(textname=="text6")
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else if(textname=="text7")
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else if(textname=="text8")
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else if(textname=="text9")
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+ }
+else
+{
+ source("lxplotting.R")
+ lxplot(textname)
+ btn2<-gbutton("Get Word Count",container=mainwindow,handler=function(h,...)
+ {
+ source("wordcount_GUI.R")
+ wcgui(textname)
+ })
+}
+}
+
+
+
+
+
+
+
+
+

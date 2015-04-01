@@ -1,0 +1,20 @@
+window<-gwindow("Providing the context of a word")
+mainwindow<-ggroup(horizontal=FALSE,container=window)
+windowgroup<-ggroup(horizontal=TRUE,container=mainwindow)
+label1<-glabel("Enter a file                                                                 ",container=windowgroup)
+btn<-gbutton("Browse",container=windowgroup,handler=function(h,...)
+{
+path<-gfile()
+source("set.R")
+sets(path)
+})
+windowgroup1<-ggroup(horizontal=TRUE,container=mainwindow)
+label2<-glabel("Enter bookname : ",container=windowgroup1)
+text1<-gedit(container=windowgroup1)
+btn2<-gbutton("submitbutton",container=mainwindow,handler=function(h,...)
+{
+texname<-svalue(text1)
+source("set.R")
+sets(texname)
+})
+
