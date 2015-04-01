@@ -1,7 +1,0 @@
-pos.words = scan('positive-words.txt', what='character', comment.char=';')
-neg.words = scan('negative-words.txt', what='character', comment.char=';')
-
-sample = c("You're awesome and I love you", "I hate and hate and hate. So angry. Die!","Impressed and amazed: you are peerless in your achievement of unparalleled mediocrity.")
-
- result = score.sentiment(sample, pos.words, neg.words)
- result
